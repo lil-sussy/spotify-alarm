@@ -1,0 +1,15 @@
+[Unit]
+Description=Spotify Autoplay Racer (Poetry)
+After=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/Desktop/repos/spotify-alarm
+ExecStart=/usr/bin/spotify && /usr/bin/poetry run python src/main.py
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+Environment=PATH=%h/.local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=spotify-autoplay.timer

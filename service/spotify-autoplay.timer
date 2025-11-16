@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily 6:55 AM timer for Spotify Autoplay playlist : "Racer"
+
+[Timer]
+OnCalendar=*-*-* 06:55
+Persistent=true
+Unit=spotify-autoplay.service
+
+[Install]
+WantedBy=timers.target

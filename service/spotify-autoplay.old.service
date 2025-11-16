@@ -1,0 +1,14 @@
+[Unit]
+Description=Spotify Autoplay Racer (user)
+After=graphical-session.target
+
+[Service]
+Type=simple
+Environment=PATH=%h/spotify-autoplay-racer/.venv/bin:/usr/bin:/bin
+WorkingDirectory=%h/spotify-autoplay-racer
+ExecStart=%h/spotify-autoplay-racer/run.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
