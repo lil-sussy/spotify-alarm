@@ -1,4 +1,5 @@
 [project]
+package-mode = false
 name = "spotify-alarm"
 version = "0.1.0"
 description = ""

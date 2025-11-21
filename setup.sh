@@ -2,6 +2,9 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
+mkdir ./logs
+touch ./logs/play.log
+
 echo "[SETUP] Installing Poetry dependencies..."
 poetry install --no-root
 
