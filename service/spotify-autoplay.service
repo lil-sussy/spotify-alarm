@@ -4,7 +4,7 @@ After=graphical-session.target
 
 [Service]
 Type=simple
-WorkingDirectory=%h/Desktop/repos/spotify-alarm
+WorkingDirectory=/home/hornet/Desktop/repos/spotify-alarm
 ExecStart=/usr/bin/spotify && /usr/bin/poetry run python src/main.py
 Restart=on-failure
 RestartSec=5
