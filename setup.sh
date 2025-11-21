@@ -3,6 +3,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 mkdir ./logs
+mkdir ./secrets/
 touch ./logs/play.log
 
 echo "[SETUP] Installing Poetry dependencies..."
